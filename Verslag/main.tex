@@ -1,0 +1,34 @@
+\input{preamble}
+
+% Header
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\lhead{Labo UML}
+\cfoot{\thepage}
+
+\begin{document}
+\pagenumbering{gobble}
+
+%section counter for lstlistings
+\counterwithin{lstlisting}{section}
+
+\include{titlepage}
+
+\pagenumbering{arabic}
+\selectlanguage{dutch}
+
+% TOC
+\setcounter{tocdepth}{3}
+\thispagestyle{empty}
+\tableofcontents
+\thispagestyle{empty}
+% end TOC
+
+\newpage
+
+% Main content
+\include{chapters/chapter1}
+% End main content
+
+\end{document}
